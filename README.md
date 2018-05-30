@@ -1,3 +1,8 @@
+# 注意⚠️：  本代码仓停止维护，现转移代码仓 （https://github.com/newh5/newh5-cli）
+## 2018-05-30 09:45
+
+
+
 # tqb-h5-cli - HTML5 boilerplate and build tool
 
 newh5 - 面向开发者的灵活可扩展的 HTML5 构建工具，提供命令行工具 newh5（基于 Webpack4），**无需构建配置文件即可进行开发**，可用来制作各种 HTML5 场景营销活动页面，也可自由的通过模板和组件的组合来快速定制开发。
