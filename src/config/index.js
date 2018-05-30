@@ -1,3 +1,5 @@
+const debug = require('debug')('newh5-cli:config')
+
 const path = require('path')
 const fs = require('fs')
 const chalk = require('chalk')
@@ -20,9 +22,13 @@ function resolveOwn(relativePath) {
 
 const configPath = resolveApp(CONFIG_FILENAME)
 try {
+
+  debug(configPath)
+
   if (isExist(configPath, 'file')) {
     config = require(configPath)
   }
+
 } catch (err) {
   console.log('')
   console.log('Load config file: ' + chalk.cyan(configPath) + ' occur error!')

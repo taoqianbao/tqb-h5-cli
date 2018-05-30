@@ -21,6 +21,7 @@ const cssLoader = [{
 }]
 
 module.exports = merge(baseWebpackConfig, {
+    // entry: config.entry,
     module: {
         rules: [{
             test: /\.(eot|woff|woff2|ttf|svg|png|jpe?g|jpg|gif)(\?\S*)?$/,

@@ -1,3 +1,5 @@
+const debug = require('debug')('newh5-cli:StartComd')
+
 process.env.NODE_ENV = 'development'
 process.traceDeprecation = true
 
@@ -19,6 +21,10 @@ let isFirstRun = true
 let compiler
 
 function setupCompiler(host, port) {
+
+  debug(allConfig)
+
+
   compiler = webpack(webpackConfig)
 
   compiler.plugin('invalid', function () {
